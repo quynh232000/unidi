@@ -54,3 +54,22 @@ img{
 .btn--primary:hover{
     opacity: .9;
 }
+.app{
+    width: 100%;
+}
+@media screen and (max-width:1200px){
+    :root{
+        --width:100%;
+    }
+    .wrapper{
+        padding:0 10px;
+    }
+
+}
+@media screen and (max-width:500px){
+    html {
+        line-height: 1.4rem;
+        font-size: 50%;
+        
+    }
+}

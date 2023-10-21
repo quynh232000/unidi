@@ -52,6 +52,7 @@
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    width: 100%;
 }
 .categories-wrapper{
     display: flex;
@@ -555,7 +556,6 @@
     background-size: 100%;
     display: flex;
     width: 100%;
-    
 }
 .signup-wrapper{
     display: flex;
@@ -564,6 +564,7 @@
     width: 100%;
     padding: 40px 0;
     color: white;
+    height: 132px;
 }
 .sign-up-left-big{
     font-size: 3.4rem;
@@ -585,4 +586,92 @@
     cursor: pointer;
     opacity: .8;
     transition: .3s ease;
+}
+@media screen and (max-width:1154px){
+    .banner-left,.banner-right{
+        display: none;
+    }
+    .banner-mid{
+        padding: 0;
+    }
+    .banner2-wrapper img {
+        height: auto;
+    }
+}
+@media screen and (max-width:1000px){
+    .new-product .product{
+        width: 25% !important;
+    }
+    .new-product-big{
+        width: 50% !important;
+    }
+    .new-product-wrapper{
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:960px){
+    .best-selling-list .product,.suggest-list-products .product{
+        width: 25%;
+    }
+}
+@media screen and (max-width:910px){
+    .best-selling-list .product{
+        width: 25%;
+    }
+}
+@media screen and (max-width:810px){
+    .news-wrapper{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:700px){
+    .new-product-big{
+        display: none !important;
+    }
+    .best-selling-list .product,.new-product .product{
+        width: 33.334% !important;
+    }
+    .suggest-list-products .product{
+        width: 33.334%;
+    }
+    .best-selling-list .product{
+        width: 33.334%;
+    }
+    .h_signup{
+        background-repeat: repeat;
+        padding: 0 10px;
+    }
+    .signup-wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+    .bottom-btn-signup{
+        text-align: center;
+    }
+    .l-footer-wrapper{
+        flex-wrap: wrap;
+    }
+    .l-footer-item{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .best-selling-list .product,.new-product .product{
+        width: 50% !important;
+    }
+    .mega-top-content{
+        padding: 40px 10px;
+    }
+    .suggest-list-products .product{
+        width: 50%;
+    }
+    .best-selling-list .product{
+        width: 50%;
+    }
+    .l-footer-item{
+        width: 100%;
+    }
+    
 }
