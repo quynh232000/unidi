@@ -99,7 +99,7 @@
     color: #ADADAD;
     font-size: 1.6rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 .cate-count{
     color: #ADADAD;
@@ -191,110 +191,7 @@
 .mega-swipper-products{
     width: 100%;
 }
-.product{
-    /* width: 16.66%; */
-    width: 100%;
-    padding: 6px;
-    transition: .3s ease;
-}
-.product:hover{
-    transform: translate(-1px,-1px);
-}
-.swiper.mega-swipper-products.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
-    padding: 0 4px;
-}
-.product-wrapper{
-    background-color: white;
-    border-radius: 8px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0px 0px 4px 0px var(--box-shadows);
 
-}
-.product-img{
-    width: 100%;
-    height: 156px;
-    display: flex;
-    justify-content: center;
-}
-.product-img img{
-    width: 100%;
-    object-fit: contain;
-}
-.product-brand{
-    color: #ADADAD;
-    font-size: 1.6rem;
-    margin: 10px 0 4px;
-}
-.product-name{
-    color: #676767;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    margin: 4px 0 8px;
-}
-.product-stars i{
-    color: var(--bg-yellow);
-    font-size: 1.2rem;
-}
-.product-stars span{
-    font-size: 1.4rem;
-    color: rgb(84, 82, 82);
-}
-.product-price{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-weight: 600;
-    font-size: 1.6rem;
-    margin: 8px 0;
-}
-.product-price-sale{
-    color: var(--bg-yellow);
-
-}
-.product-price-old{
-    color: #ADADAD;
-    font-weight: 400;
-}
-.product-btn{
-    color: var(--primary);
-    width: 100%;
-    border: 1px solid var(--primary);
-    font-size: 1.6rem;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    padding: 8px 0;
-    gap: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: .3s ease;
-
-}
-.product-btn:hover{
-    background-color: #eff7ff;
-    
-}
-.product-sale-label{
-    position: absolute;
-    top: 0;
-    left: 8px;
-}
-.product-sale-label span{
-    position: absolute;
-    font-size: 1.6rem;
-    left: 18%;
-    color: white;
-    top: 50%;
-    transform: translateY(-95%);
-}
-
-.product-info{
-    display: flex;
-    flex-direction: column;
-}
 .new-product{
     width: 100%;
     background-image: url("/assest/images/bg2 1.svg");
@@ -652,6 +549,13 @@
         flex-wrap: wrap;
     }
     .l-footer-item{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .more-info{
+        flex-wrap: wrap;
+    }
+    .more-info-item{
         width: 50%;
         margin-bottom: 10px;
     }

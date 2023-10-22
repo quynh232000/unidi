@@ -1,21 +1,50 @@
 
-const menu = document.getElementById("menumobile");
-const sidebar = document.querySelector(".sidebar");
-const close = document.querySelector(".sidebar-close i");
-const sidebarbody = document.querySelector(".sidebar-wrapper");
+// ==============function start===================//
+function handleOpenNavMobile(){
+    $("#menumobile").click(function(){
 
-menu.onclick = ()=>{
-    sidebar.style="left:0";
-    sidebarbody.style="transform:translateX(0%);"
+        $(".sidebar").css("left","0%")
+        $(".sidebar-wrapper").css("transform","translateX(0%)")
+    })
+    $(".sidebar-close i").click(function(){
+        $(".sidebar").css("left","100%")
+        $(".sidebar-wrapper").css("transform","translateX(100%)")
+    })
+    $(".sidebar").click(function(){
+        $(".sidebar").css("left","100%")
+        $(".sidebar-wrapper").css("transform","translateX(100%)")
+    })
+    $(".sidebar-wrapper").click(function(e){
+        e.stopPropagation()
+    })
 }
-close.onclick=()=>{
-    sidebar.style="left:100%";
-    sidebarbody.style="transform:translateX(100%);"
+function handleShowSortCollection(){
+    $(".c-nav-hhiden").click(function(){
+        $(".g-left").css("display","block")
+        $(".g-left").click(function(e){
+            e.stopPropagation()
+            setTimeout(()=>{
+                $(".g-left").css("display","none")
+
+            },1000)
+        })
+    })
+    
+    
+    
 }
-sidebar.onclick =()=>{
-    sidebar.style="left:100%";
-    sidebarbody.style="transform:translateX(100%);"
-}
-sidebarbody.onclick=(e)=>{
-    e.stopPropagation()
-}
+// ==============function end===================//
+
+
+$().ready(function(){
+    // show sidebar
+    if($(".menumobile")) {
+        handleOpenNavMobile()
+    }
+    // show short collection
+    if($(".g-left").length){
+        handleShowSortCollection()
+    }
+
+
+})
