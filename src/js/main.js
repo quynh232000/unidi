@@ -29,9 +29,31 @@ function handleShowSortCollection(){
             },1000)
         })
     })
-    
-    
-    
+}
+function handleTreeView (){
+    $(".tree-item-icon").click(function(){
+        if($(this).parent().hasClass("has")){
+            const ulChild = $(this).parent().siblings()
+            if( $(this).parent().siblings().hasClass("active")){
+                ulChild.removeClass("active")
+            }else{
+                ulChild.addClass("active")
+            }
+        }
+    })
+}
+function handleReferralTab(){
+    $(".referral-tab-item").click(function(){
+        const typeActive = $(this).attr("type")
+        $(".referral-tab-item").each(function(){
+            $(this).removeClass("active")
+            const typeActive1 = $(this).attr("type")
+            $(`.referral-content.${typeActive1}`).removeClass("active")
+        })
+        $(this).addClass("active")
+        console.log(typeActive)
+        $(`.referral-content.${typeActive}`).addClass("active")
+    })
 }
 // ==============function end===================//
 
@@ -44,6 +66,11 @@ $().ready(function(){
     // show short collection
     if($(".g-left").length){
         handleShowSortCollection()
+    }
+    // tree view
+    if($(".referral-body")){
+        handleTreeView()
+        handleReferralTab()
     }
 
 

@@ -33,8 +33,8 @@
     <div class="app">
         <!--header-->
         <header class="header header-no-show">
-           <!-- sidebar -->
-           <div class="sidebar">
+          <!-- sidebar -->
+          <div class="sidebar">
             <div class="sidebar-wrapper">
                 <div class="sidebar-close">
                     <i class="fa-solid fa-xmark"></i>
@@ -104,12 +104,13 @@
             </div>
     
         </div>
+            <!-- sidebar -->
             <div class="header-top">
                 <div class="wrapper">
                     <div class="header-top-left">
                         <div class="header-top-item">
                             <div class="header-top-item-title">
-                                Language:
+                                Language: 
                             </div>
                             <div class="header-top-item-body">
                                 <div class="header-top-iem-img">
@@ -412,7 +413,7 @@
                             </div>
                         </div>
                         <div class="profile-nav-list">
-                            <div class="profile-nav-item active">
+                            <div class="profile-nav-item ">
                                 <a href="/profile.html" class="profile-nav-content ">
                                    <div class="profile-nav-item-title">
                                         <i class="fa-regular fa-user"></i>
@@ -435,8 +436,8 @@
                                      </a>
                                 </div>
                             </div>
-                            <div class="profile-nav-item">
-                                <a href="./referral.html" class="profile-nav-content">
+                            <div class="profile-nav-item ">
+                                <a href="./referral.html" class="profile-nav-content ">
                                    <div class="profile-nav-item-title">
                                     <i class="fa-solid fa-link"></i>
                                         <div class="profile-nav-name">Referral</div>
@@ -444,8 +445,8 @@
                                 </a>
                                
                             </div>
-                            <div class="profile-nav-item">
-                                <a href="/sercurity.html" class="profile-nav-content">
+                            <div class="profile-nav-item active">
+                                <a href="/sercurity.html" class="profile-nav-content active">
                                    <div class="profile-nav-item-title">
                                         <i class="fa-solid fa-shield"></i>
                                         <div class="profile-nav-name">Security</div>
@@ -455,17 +456,17 @@
                                     </div>
                                 </a>
                                 <div class="profile-nav-more">
-                                    <a href="" class="profile-nav-content">
+                                    <a href="/sercurity.html" class="profile-nav-content ">
                                         <div class="profile-nav-item-title">
                                              <div class="profile-nav-name">Password</div>
                                         </div>
                                      </a>
-                                     <a href="" class="profile-nav-content ">
+                                     <a href="/password2.html" class="profile-nav-content ">
                                         <div class="profile-nav-item-title">
                                              <div class="profile-nav-name">Password Level 2</div>
                                         </div>
                                      </a>
-                                     <a href="" class="profile-nav-content ">
+                                     <a href="/sercurity2fa.html" class="profile-nav-content active">
                                         <div class="profile-nav-item-title">
                                              <div class="profile-nav-name">2FA</div>
                                         </div>
@@ -476,85 +477,86 @@
                            
                         </div>
                     </div>
-                    <div class="profile-container">
-                        <div class="profile-title">Profile</div>
-                        <form class="form-update-profile">
-                            <div class="profile-avatar-body">
-                                <div class="profile-img">
-                                    <img src="https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg" alt="">
-                                </div>
-                                <label for="avatar-input">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    <span>Upload photo</span>
-                                </label>
-                                <input type="file" name="avatar" id="avatar-input" hidden>
-                            </div>
+                    <div class="referral-body">
+                        <div class="profile-title">Password Level 2</div>
+                        <form class="form-update-password-lv2">
                             <div class="profile-wrapper">
-                                <div class="profile-group">
-                                    <label for="">Username</label>
-                                    <div class="profile-content">
-                                        <input type="text" value="Mr Bin" name="username" class="profile-input">
+                                <div class="pro-b-r-body google-authan">
+                                    <div class=" password-lv2-container google-authan-container">
+                                        <div class="au-title">
+                                            Two-Factor Security Option
+                                        </div>
+                                        <div class="au-text">
+                                            Two-factor authentication is a method for protecting your web account. When it is activated you need to enter not only your password, but also a special code. You can receive this code by in mobile app. Even if a third person will find your password, they can't access it with that code.
+                                        </div>
+                                        <div class="au-status">
+                                            <div class="au-text">Current Status:</div>
+                                                <div class="au-btn-status">Enable</div>
+                                           
+                                                <!-- <div class="au-btn-status disabled">Disalbed</div> -->
+                                           
+                                        </div>
+            
+                                       
+                                            <div class="au-title">
+                                                Install an authentication app on your device. Any app that supports the Time-based One-Time Password (TOTP) protocol should work, including:
+                                            </div>
+                                            <div class="au-app">
+                                                <a class="au-small-text" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=vi&gl=US"><i class="fa-brands fa-android"></i> Google Authenticator Android</a>
+                                                <a class="au-small-text" href="https://apps.apple.com/vn/app/google-authenticator/id388497605"><i class="fa-brands fa-app-store-ios"></i> Google Authenticator iOS</a>
+                                            </div>
+                                            <div class="au-title">
+                                                1) Use the authenticator app to scan the barcode below.
+                                            </div>
+                                            <div class="au-img-body">
+                                                <div class="au-img">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuU_BzP5DWSmL24gwH9VfbiY28dFG3dQ5wMA&usqp=CAU" />
+                                                </div>
+                                                <div class="au-code-body">
+                                                    <span>
+                                                        Manually set code:
+                                                    </span>
+                                                    <div class="au-code">
+                                                       asdasdasdasd
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="au-title">
+                                                2) Enter the code generated by the authenticator app.
+                                            </div>
+                                        
+            
+                                        <form id="formUpdate2FA">
+                                            <div class="au-input">
+                                                <label>Login Password</label>
+                                                <input class="au-input-control profile-input" type="password" name="Password" />
+                                            </div>
+                                            <div class="au-input">
+                                                <label>2FA Password</label>
+                                                <input class="au-input-control profile-input" type="password" name="Code" />
+                                            </div>
+                                            <input type="hidden" name="Enable" value="sdfsdfsdfsdfsdf" />
+                                            <button class="au-btn-submit-body au-btn-submit" type="submit">
+                                                DISABLE 2FA
+                                            </button>
+                                        </form>
+                                        <div class="au-noti">
+                                            <div class="au-noti-icon"><i class="fa-solid fa-circle-info"></i></div>
+            
+                                            <div>
+                                                Important! In case of loss of access to the mobile application, you can regain it using the mobile number specified in your profile. If you don't save that, we will not able to help you to regain it.
+            
+                                            </div>
+                                        </div>
+            
+            
                                     </div>
-                                </div>
-                                <div class="profile-group">
-                                    <label for="">Fullname</label>
-                                    <div class="profile-content">
-                                        <input type="text" value="Nguyen Van A" name="fullname" class="profile-input">
-                                    </div>
-                                </div>
-                                <div class="profile-group">
-                                    <label for="">Gender</label>
-                                    <div class="profile-content">
-                                       <div class="profile-gender">
-                                        <input type="radio" id="gender1" name="gender">
-                                        <label for="gender1">Male</label>
-                                       </div>
-                                       <div class="profile-gender">
-                                        <input type="radio" id="gender2" name="gender">
-                                        <label for="gender2">Female</label>
-                                       </div>
-                                       <div class="profile-gender">
-                                        <input type="radio" id="gender3" name="gender">
-                                        <label for="gender3">Orther</label>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="profile-group">
-                                    <label for="">Phone number</label>
-                                    <div class="profile-content">
-                                        <input type="text" value="098662323" name="phonenumber" class="profile-input">
-                                    </div>
-                                </div>
-                                <div class="profile-group">
-                                    <label for="">Email</label>
-                                    <div class="profile-content">
-                                        <input type="email" value="bim@gmail.com" name="email" class="profile-input">
-                                    </div>
-                                </div>
-                                <div class="profile-group">
-                                    <label for="">Date of birth</label>
-                                    <div class="profile-content">
-                                        <input type="date"  name="birthday" class="profile-input">
-                                    </div>
-                                </div>
-                                <div class="profile-group">
-                                    <label for="">Address</label>
-                                    <div class="profile-content">
-                                        <input type="text" value="q8, hcm" name="address" class="profile-input">
-                                    </div>
-                                </div>
-                                <div class="profile-eidt-submit">
-                                    <button class="btn-update-profile" type="submit">
-                                        Update
-                                    </button>
                                 </div>
                             </div>
-
-
-
-
                         </form>
+                        
                     </div>
+                    
                  </div>
             </div>
         </main>
