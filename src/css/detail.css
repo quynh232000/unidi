@@ -13,21 +13,7 @@
     margin: 20px 0;
     gap: 16px;
 }
-.detail-tab{
-    display: flex;
-    gap: 10px;
-}
-.detail-tab-item{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.detail-tab-item span{
-    color: var(--primary);
-}
-.detail-tab-item-name span{
-    color: var(--text-color);
-}
+
 .detail-content{
     display: flex;
     gap: 18px;
@@ -91,6 +77,11 @@
 .detail-name{
     font-size: 2.4rem;
     line-height: 2.8rem;
+    color: var(--primary);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     
 }
 .detail-rate{
@@ -338,4 +329,57 @@
 }
 .detail-description-img img{
     width: 240px;
+}
+@media screen and (max-width:1000px){
+    .detail-content{
+        flex-wrap: wrap;
+    }
+    .detail-left{
+        width: 100%;
+    }
+    .detail-right{
+        width: 100%;
+    }
+    .detail-list-img{
+        justify-content: center;
+    }
+    .detail-right{
+        border-top: 3px solid rgba(22,22,24,.06);
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:660px){
+    .detail-info-quantity{
+        gap: 20px;
+    }
+}
+@media screen and (max-width:540px){
+    .detail-info-size{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:510px){
+    .detail-flash{
+        display: none;
+    }
+    
+    .detail-amount-total{
+        display: none;
+    }
+    .detail-info-title{
+        min-width: 0;
+        padding-right: 20px;
+    }
+    .detail-btn-body{
+        gap: 10px;
+    }
+    .detail-btn {
+        flex: 1;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: inherit;
+    }
+    
 }

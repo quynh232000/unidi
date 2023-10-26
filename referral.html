@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assest/images/logo-no-text.png">
+    <title>UNDI - Profile </title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/style.css"> 
+    <link rel="stylesheet" href="./src/css/profile.css">
+
+    <!-- swiper -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <div class="app">
+        <!--header-->
+        <header class="header header-no-show">
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-wrapper">
+                    <div class="sidebar-close">
+                        <i class="fa-solid fa-xmark"></i>
+                        <a href="/" class="sidebar-img">
+                            <img src="./assest/images/UNIDI_LOGO-FINAL 2.svg" alt="logo">
+                        
+                        </a>
+                    </div>
+                    <div class="sidebar-body">
+
+                        <a href="/account/profile" class="sidebar-item-account">
+                            <div class="m-user-img">
+                                <img src="https://yt3.googleusercontent.com/-CFTJHU7fEWb7BYEb6Jh9gm1EpetvVGQqtof0Rbh-VQRIznYYKJxCaqv_9HeBcmJmIsp2vOO9JU=s900-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <span>Hi, Mr Bin</span>
+                        </a>
+
+                        <a href="/" class="sidebar-item">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                        <a href="/" class="sidebar-item">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Shopping
+                        </a>
+                        <a href="#partner" class="sidebar-item">
+                            <i class="fa-solid fa-handshake"></i>
+                            Partner
+                        </a>
+                        <a href="/" class="sidebar-item">
+                            <i class="fa-solid fa-handshake"></i>
+                            Stock
+                        </a>
+        
+                        <a href="/" class="sidebar-item">
+                            <i class="fa-solid fa-store"></i>
+                            Become a seller
+                        </a>
+                        <a href="/" class="sidebar-item">
+                            <i class="fa-solid fa-droplet"></i>
+                            Become a pooler
+                        </a>
+                        <div class="sidebar-bottom">
+                            <a href="/login" class="sidebar-item action">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                Sign in
+                            </a>
+                            <a href="/register" class="sidebar-item action">
+                                <i class="fa-solid fa-registered"></i>
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- sidebar -->
+            <div class="header-top">
+                <div class="wrapper">
+                    <div class="header-top-left">
+                        <div class="header-top-item">
+                            <div class="header-top-item-title">
+                                Language: 
+                            </div>
+                            <div class="header-top-item-body">
+                                <div class="header-top-iem-img">
+                                    <img src="./assest/images/vietnam.svg" alt="">
+                                </div>
+                                <div class="header-top-item-content">Tiếng Việt</div>
+                                <div class="header-more">
+                                    <div class="header-more-item">
+                                        <div class="header-top-iem-img">
+                                            <img src="./assest/images/vietnam.svg" alt="">
+                                        </div>
+                                        <div class="header-top-item-content">Tiếng Việt</div>
+                                    </div>
+                                    <div class="header-more-item">
+                                        <div class="header-top-iem-img">
+                                            <img src="./assest/images/vietnam.svg" alt="">
+                                        </div>
+                                        <div class="header-top-item-content">English</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-header-top-space"></div>
+                        <div class="header-top-item">
+                            <div class="header-top-item-title">
+                                Curency:
+                            </div>
+                            <div class="header-top-item-body">
+                                <div class="header-top-select-currency">
+                                    <div class="header-top-iem-img">
+                                        <img src="./assest/images/pngegg 1.svg" alt="">
+                                    </div>
+                                    <div class="header-top-item-content">USDT</div>
+                                </div>
+                                <div class="header-select-currency-more">
+                                    <div class="header-select-currency-item">
+                                        <div class="header-top-iem-img">
+                                            <img src="./assest/images/pngegg 1.svg" alt="">
+                                        </div>
+                                        <div class="header-top-item-content">USDT</div>
+                                    </div>
+                                    <div class="header-select-currency-item">
+                                        <div class="header-top-iem-img">
+                                            <img src="./assest/images/pngegg 1.svg" alt="">
+                                        </div>
+                                        <div class="header-top-item-content">USDT</div>
+                                    </div>
+                                    <div class="header-select-currency-item">
+                                        <div class="header-top-iem-img">
+                                            <img src="./assest/images/pngegg 1.svg" alt="">
+                                        </div>
+                                        <div class="header-top-item-content">USDT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-header-top-menu">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="header-top-right">
+                        <a href="/" class="header-top-item">
+                            <div class="header-top-item-body">
+                                <div class="header-top-iem-img">
+                                    <img src="./assest/images/Vector.svg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div  class="header-top-item-title">
+                                Home
+                            </div>
+                        </a>
+                        <a href="seller" class="header-top-item">
+                            <div href="seller" class="header-top-item-body">
+                                <div class="header-top-iem-img">
+                                    <img src="./assest/images/Group.svg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="header-top-item-title">
+                                Become a seller
+                            </div>
+                        </a>
+                        <a href="/pools" class="header-top-item">
+                            <div class="header-top-item-body">
+                                <div class="header-top-iem-img">
+                                    <img src="./assest/images/Group (1).svg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="header-top-item-title">
+                                Become a pooler
+                            </div>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div >
+            <div class="header-body">
+                <div class="wrapper">
+                    <a href="/" class="header-logo">
+                        <img src="./assest/images/UNIDI_LOGO-FINAL 2.svg" alt="">
+                    </a>
+                
+                    <div class="header-search-body">
+                        <!-- <div class="header-search-menu"><i class="fa-solid fa-bars"></i></div> -->
+                        <div class="header-search">
+                            <div class="header-search-left">
+                                <span>All Colections</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <input type="text" placeholder="Search our products...">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-header">History</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Giày sneaker</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <i class="fa-solid fa-magnifying-glass"></i> 
+                        </div>
+                    </div>
+                    
+                    <div class="header-search-right">
+                        <div class="m-header-search">
+                            <i class="fa-solid fa-magnifying-glass"></i> 
+                        </div>
+                        <div class="header-search-item header-contact">
+                            <div class="header-search-item-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="header-search-info">
+                                <span>(+800) 091233</span>
+                                <div class="header-search-text-s">
+                                    (Call Us Now)
+                                </div>
+                            </div>
+                        </div>
+                        <!-- not login -->
+                        <!-- <div class="header-search-item header-search-account">
+                            <div class="header-search-item-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="header-search-info">
+                                <span>Login</span>
+                                <div class="header-search-text-s">
+                                    Account
+                                </div>
+
+                                
+                            </div>
+                            <div class="account-more">
+                                <a href="#" class="account-more-item">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    <span>Login</span>
+                                </a>
+                                <a href="#" class="account-more-item">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span>Create Account</span>
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- login -->
+                        <div class="header-search-item header-search-account">
+                            <div class="header-search-item-icon">
+                                <img src="https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg" class="img-user" alt="">
+                            </div>
+                            <a href="/account/profile" class="header-search-info">
+                                <span>Hi, Mr Bin</span>
+                                <div class="header-search-text-s">
+                                    Profile
+                                </div>
+                            </a>
+                            <div class="account-more">
+                                <a href="#" class="account-more-item">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Profile</span>
+                                </a>
+                                <a href="/shop.html" class="account-more-item">
+                                    <i class="fa-solid fa-store"></i>
+                                    <span>My shop</span>
+                                </a>
+                                <a href="#" class="account-more-item">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <span>My Wallet</span>
+                                </a>
+                                <a href="#" class="account-more-item">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-search-item header-cart">
+                            <div class="header-search-item-icon icon-cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <div class="cart-count">2</div>
+                            </div>
+                            <div class="header-search-info">
+                                <span>Checkout</span>
+                                <div class="header-search-text-s">
+                                    $250.000
+                                </div>
+                            </div>
+                            <!-- no cart :: header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="https://cdn.shopify.com/s/files/1/0824/3121/t/204/assets/iphone14-1682521510040_1200x.png?v=1682521526" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list--no-cart-smg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <p class="header__cart-heading">Recently added products</p>
+                                <ul class="header__cart-list-item">
+                                    <!-- cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn.shopify.com/s/files/1/0824/3121/t/204/assets/iphone14-1682521510040_1200x.png?v=1682521526" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Giay sneaker 45TK Giay sneaker 45TK Giay sneaker 45TK Giay sneaker 45TK Giay sneaker 45TK Giay sneaker 45TK Giay sneaker 45TK</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000$</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    San pham cao cap nhap khau
+                                                </span>
+                                                <span class="header__cart-item-remmove">Delete</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn.shopify.com/s/files/1/0824/3121/t/204/assets/iphone14-1682521510040_1200x.png?v=1682521526" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Giay sneaker 45TK</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000$</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    San pham cao cap nhap khau
+                                                </span>
+                                                <span class="header__cart-item-remmove">Delete</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn.shopify.com/s/files/1/0824/3121/t/204/assets/iphone14-1682521510040_1200x.png?v=1682521526" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Giay sneaker 45TK</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000$</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    San pham cao cap nhap khau
+                                                </span>
+                                                <span class="header__cart-item-remmove">Delete</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="" class="header__cart-view-cart btn btn--primary">View cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-menu" id="menumobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <!-- main -->
+        <main class="profile">
+            <div class="wrapper">
+                 <div class="profile-body">
+                    <div class="profile-nav">
+                        <div class="profile-nav-user">
+                            <div class="profile-nav-avatar">
+                                <img src="https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg" alt="">
+                            </div>
+                            <div class="profile-nav-info">
+                                <div class="profile-nav-user-name">Mr Bin</div>
+                                <div class="profile-nav-user-edit">Edit account</div>
+                            </div>
+                        </div>
+                        <div class="profile-nav-list">
+                            <div class="profile-nav-item ">
+                                <a href="/profile.html" class="profile-nav-content ">
+                                   <div class="profile-nav-item-title">
+                                        <i class="fa-regular fa-user"></i>
+                                        <div class="profile-nav-name">Profile</div>
+                                   </div>
+                                    <div class="profile-nav-item-down">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                                <div class="profile-nav-more">
+                                    <a href="" class="profile-nav-content ">
+                                        <div class="profile-nav-item-title">
+                                             <div class="profile-nav-name">Password</div>
+                                        </div>
+                                     </a>
+                                     <a href="" class="profile-nav-content ">
+                                        <div class="profile-nav-item-title">
+                                             <div class="profile-nav-name">Address</div>
+                                        </div>
+                                     </a>
+                                </div>
+                            </div>
+                            <div class="profile-nav-item">
+                                <a href="./referral.html" class="profile-nav-content active">
+                                   <div class="profile-nav-item-title">
+                                    <i class="fa-solid fa-link"></i>
+                                        <div class="profile-nav-name">Referral</div>
+                                   </div>
+                                </a>
+                               
+                            </div>
+                            <div class="profile-nav-item">
+                                <a href="/sercurity.html" class="profile-nav-content">
+                                   <div class="profile-nav-item-title">
+                                        <i class="fa-solid fa-shield"></i>
+                                        <div class="profile-nav-name">Security</div>
+                                   </div>
+                                    <div class="profile-nav-item-down">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                                <div class="profile-nav-more">
+                                    <a href="" class="profile-nav-content">
+                                        <div class="profile-nav-item-title">
+                                             <div class="profile-nav-name">Password</div>
+                                        </div>
+                                     </a>
+                                     <a href="" class="profile-nav-content ">
+                                        <div class="profile-nav-item-title">
+                                             <div class="profile-nav-name">Password Level 2</div>
+                                        </div>
+                                     </a>
+                                     <a href="" class="profile-nav-content ">
+                                        <div class="profile-nav-item-title">
+                                             <div class="profile-nav-name">2FA</div>
+                                        </div>
+                                     </a>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+                    <div class="referral-body">
+                        <div class="profile-title">Referral link</div>
+                        <div class="referral-top">
+                             <div class="referral-top-item">
+                                <div class="referral-top-title">
+                                    <span>TRỰC TIẾP</span>
+                                    <div class="referral-top-icon">
+                                        <i class="fa-solid fa-people-group"></i>
+                                    </div>
+                                </div>
+                                <div class="referral-top-id">6 ID</div>
+                             </div>
+                             <div class="referral-top-item">
+                                <div class="referral-top-title">
+                                    <span>HOA HỒNG</span>
+                                    <div class="referral-top-icon">
+                                        <i class="fa-solid fa-money-bill-wave"></i>
+                                    </div>
+                                </div>
+                                <div class="referral-top-id">6 ID</div>
+                             </div>
+                        </div>
+                        <div class="referral-copy">
+                            <div class="referral-copy-text">sdjfsladjsfksf</div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_snX16-XXmqtf6UJgFLsO1B4-0DKxW_zfg&usqp=CAU" alt="">
+                            <div class="referral-copy-btn">
+                                <i class="fa-regular fa-copy"></i>
+                                <button>Copy</button>
+                            </div>
+                        </div>
+                        <div class="referral-tab">
+                            <div class="referral-tab-item active">ID chỉ định</div>
+                            <div class="referral-tab-item">Sponsor Treeview</div>
+                        </div> 
+                        <div class="referral-content">
+                            <div class="referral-id">
+                                <div class="referral-id-nav">
+                                    <div class="rederral-id-item">
+                                        <div class="rederral-id-time">Time</div>
+                                        <div class="rederral-id-username">Username</div>
+                                        <div class="rederral-id-name">Fullname</div>
+                                        <div class="rederral-id-phone"> Phonenumber</div>
+                                        <div class="rederral-id-email"> Email</div>
+                                        <div class="rederral-id-country">Coutry </div>
+                                    </div>
+                                </div>
+                                <div class="referral-id-list">
+                                    <div class="rederral-id-item">
+                                        <div class="rederral-id-time">10/10/2023 08:34:34 AM</div>
+                                        <div class="rederral-id-username">CaoTrinh</div>
+                                        <div class="rederral-id-name">CaoTrinh</div>
+                                        <div class="rederral-id-phone"> 0909090909</div>
+                                        <div class="rederral-id-email"> caonguyentrinh.sukoka96@gmail.com</div>
+                                        <div class="rederral-id-country">Vietnamese </div>
+                                    </div>
+                                    <div class="rederral-id-item">
+                                        <div class="rederral-id-time">10/10/2023 08:34:34 AM</div>
+                                        <div class="rederral-id-username">CaoTrinh</div>
+                                        <div class="rederral-id-name">CaoTrinh</div>
+                                        <div class="rederral-id-phone"> 0909090909</div>
+                                        <div class="rederral-id-email"> caonguyentrinh.sukoka96@gmail.com</div>
+                                        <div class="rederral-id-country">Vietnamese </div>
+                                    </div>
+                                    <div class="rederral-id-item">
+                                        <div class="rederral-id-time">10/10/2023 08:34:34 AM</div>
+                                        <div class="rederral-id-username">CaoTrinh</div>
+                                        <div class="rederral-id-name">CaoTrinh</div>
+                                        <div class="rederral-id-phone"> 0909090909</div>
+                                        <div class="rederral-id-email"> caonguyentrinh.sukoka96@gmail.com</div>
+                                        <div class="rederral-id-country">Vietnamese </div>
+                                    </div>
+                                    <div class="rederral-id-item">
+                                        <div class="rederral-id-time">10/10/2023 08:34:34 AM</div>
+                                        <div class="rederral-id-username">CaoTrinh</div>
+                                        <div class="rederral-id-name">CaoTrinh</div>
+                                        <div class="rederral-id-phone"> 0909090909</div>
+                                        <div class="rederral-id-email"> caonguyentrinh.sukoka96@gmail.com</div>
+                                        <div class="rederral-id-country">Vietnamese </div>
+                                    </div>
+                                    <div class="rederral-id-item">
+                                        <div class="rederral-id-time">10/10/2023 08:34:34 AM</div>
+                                        <div class="rederral-id-username">CaoTrinh</div>
+                                        <div class="rederral-id-name">CaoTrinh</div>
+                                        <div class="rederral-id-phone"> 0909090909</div>
+                                        <div class="rederral-id-email"> caonguyentrinh.sukoka96@gmail.com</div>
+                                        <div class="rederral-id-country">Vietnamese </div>
+                                    </div>
+                                    <div class="rederral-id-item">
+                                        <div class="rederral-id-time">10/10/2023 08:34:34 AM</div>
+                                        <div class="rederral-id-username">CaoTrinh</div>
+                                        <div class="rederral-id-name">CaoTrinh</div>
+                                        <div class="rederral-id-phone"> 0909090909</div>
+                                        <div class="rederral-id-email"> caonguyentrinh.sukoka96@gmail.com</div>
+                                        <div class="rederral-id-country">Vietnamese </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                 </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer>
+            <div class="l-footer">
+                <div class="l-footer-wrapper">
+                    <div class="l-footer-item">
+                        <div class="l-footer-title">
+                            Contact Information
+                        </div>
+                        <div class="l-footer-child">
+                            <i class="fa-solid fa-headset"></i>
+                            <div class="l-footer-child-info">
+                                <span>+91 0123 456 789</span>
+                                <span>Call on Order/ Call us 24/7</span>
+                            </div>
+                        </div>
+                        <div class="l-footer-child">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="l-footer-child-info">
+                                No. 1259 Freedom, Liberty, St , New York, 11111
+                            </div>
+                        </div>
+                        <div class="l-footer-child">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="l-footer-child-info">
+                                unidi@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="l-footer-item">
+                        <div class="l-footer-title">
+                            Terms & Condition
+                        </div>
+                        <a href="/overview/help" class="l-footer-child">
+                            Help
+                        </a>
+                        <a href="/overview/Contact" class="l-footer-child">
+                            Contact
+                        </a>
+                        <a href="/overview/privacyprolicy" class="l-footer-child">
+                            Privacy - Prolicy
+                        </a>
+                        <a href="/overview/news" class="l-footer-child">
+                            News
+                        </a>
+                        <a href="/overview/termsconditions" class="l-footer-child">
+                            Terms - Condition
+                        </a>
+                    </div>
+                    <div class="l-footer-item">
+                        <div class="l-footer-title">
+                            Comnunity
+                        </div>
+                        <div class="l-list-community" style="display:flex">
+                            <a href="#" class="l-footer-child">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="l-footer-child">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="l-footer-child">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="l-footer-child">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a href="#" class="l-footer-child">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-copy">
+                    Copyright © 2023 UNIDI
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/slider.js"></script>
+   
+</body>
+</html>
