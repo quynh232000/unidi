@@ -1,0 +1,155 @@
+.s-balance-info img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.shop-wallet{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 6px var(--box-shadows);
+    border-radius: 0 0 12p 12px;
+    padding: 24px 20px;
+    background-color: white;
+    border-radius: 12px;
+    
+}
+.shop-title{
+    margin: 0;
+    padding-bottom: 0;
+}
+.s-wallet-tab{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 24px;
+    box-shadow: 0 1px 6px var(--box-shadows);
+}
+.s-wallet-tab-item{
+    font-weight: 600;
+    transition: .3s ease;
+}
+.s-wallet-tab-item.active{
+    color: var(--primary);
+}
+.s-wallet-tab-item:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+.s-balance-title{
+    font-weight: 400;
+    color: var(--text-color);
+}
+.s-balance-item{
+    display: grid;
+    padding: 8px 0;
+    grid-template-columns: 40% 30% 30%;
+    align-items: center;
+}
+.s-balance-nav .s-balance-item{
+    padding: 16px 0;
+    /* border-bottom: 1px solid var(--boder-color); */
+}
+.s-balance-type,.s-balance-available{
+    text-align: center;
+}
+.s-balance-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+.s-balance-list .s-balance-available{
+    font-size: 1.4rem;
+}
+.s-balance-type{
+    display: flex;
+    gap:12px ;
+    justify-content: flex-end;
+}
+.s-balance-btn{
+    border-radius: 12px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+.s-balance-btn:first-child{
+    background-color:rgba(222, 239, 255, 1) ;
+    color: var(--primary);
+}
+.s-balance-btn:last-child{
+    background-color:rgba(255, 245, 215, 1);
+    color: var(--bg-yellow);
+}
+.s-balance-btn:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.s-balance-add-token{
+    display: flex;
+    justify-content: center;
+   padding: 20px;
+}
+.s-balance-add-btn{
+    background-color: var(--bg-yellow);
+    color: var(--white);
+    border-radius: 50px;
+    transition: .3s ease;
+    padding: 14px 44px;
+}
+.s-balance-add-btn:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+@media screen and (max-width:560px) {
+    .s-wallet-tab{
+        gap: 0px;
+        justify-content: space-between;
+    }
+}
+/* deposit */
+.select-item-wrapper img{
+    width: 24px; 
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.select-item-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cus-select-select{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cus-select-select i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.s-deposit{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 0 10%;
+}
+.cus-select-dropdown{
+    width: 100%;
+}
+.cus-select-dropdown .cus-select-select{
+    padding: 12px 10px;
+}
+.s-deposit-note{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.s-deposit-note-item{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
